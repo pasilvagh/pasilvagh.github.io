@@ -1,4 +1,6 @@
 clean:
 	rm -rf ./_site
 	rm .jekyll-metadata
-	Gemfile.lock
+	rm Gemfile.lock
+start:
+	bundle exec jekyll serve --incremental
