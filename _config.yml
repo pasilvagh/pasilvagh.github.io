@@ -16,35 +16,15 @@
 title: Pau's Journal
 # email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Codes & stuff :)
+  Coding & stuff :)
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://pasilvagh.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 relative_permalinks: false
+
 twitter_username: lifesweetlie
-github_username:  pasilvagh
+github_username: pasilvagh
 instagram_username: lifesweetlie
-avatar: https://avatars2.githubusercontent.com/u/9327716?s=460&v=4
-
-
-# Where things are
-source:          .
-destination:     ./_site
-collections_dir: .
-data_dir:        _data
-includes_dir:    _includes
-collections:
-  posts:
-    output:   true
-
-# Handling Reading
-safe:                false
-include:             [".htaccess"]
-exclude:             ["Gemfile", "Gemfile.lock", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/"]
-keep_files:          [".git", ".svn"]
-encoding:            "utf-8"
-markdown_ext:        "markdown,mkdown,mkdn,mkd,md"
-strict_front_matter: false
-
+avatar: "/assets/imgundam.jpeg"
 
 # Conversion
 markdown:    kramdown
@@ -52,7 +32,6 @@ highlighter: rouge
 lsi:         false
 excerpt_separator: "\n\n"
 incremental: false
-
 
 # Build settings
 repository: pasilvagh/pasilvagh.github.io
@@ -65,15 +44,24 @@ kramdown:
 
 theme: minima
 
-
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+# Handling Reading
+safe:                false
+include:             [".htaccess"]
+keep_files:          [".git", ".svn"]
+encoding:            "utf-8"
+markdown_ext:        "markdown,mkdown,mkdn,mkd,md"
+strict_front_matter: false
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - LICENSE
+  - README.md
+  - CNAME
